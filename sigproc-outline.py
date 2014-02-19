@@ -107,8 +107,15 @@ pyplot.savefig('sgram.png')
 # http://docs.scipy.org/doc/scipy/reference/io.html
 import scipy
 
-# later on, I will show you how to use the wave library
-# and why you don't want to (during break)
+# for people working through this line by line
+# you'll also need to...
+from scipy.io.wavfile import read
+
+# Random Coolness Note:
+# Python does have a built in 'wave' library
+# so why are we using scipy?
+# See wavlibraryexample.py for the eqiuvalent implementation
+# using the built-in wave library.
 
 # how to import it...
 def getwavdata(file):
